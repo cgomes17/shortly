@@ -1,14 +1,19 @@
-import styled from 'tailwind';
+import { Link } from '@tanstack/react-router';
+import ShellHeaderLink from './link/link';
 
-const StyledHeader = styled.div`
-  color: pink;
-`;
-export function Header() {
+export function ShellHeader() {
   return (
-    <StyledHeader>
+    <>
+      {' '}
       <h1>Welcome to Header!</h1>
-    </StyledHeader>
+      <div className="flex gap-2 p-2">
+        <Link to="/">LOGO</Link>
+        <ShellHeaderLink path="/features" label="Features" />
+        <ShellHeaderLink path="/pricing" label="Pricing" />
+        <ShellHeaderLink path="/resources" label="Resources" />
+      </div>
+    </>
   );
 }
 
-export default Header;
+export default ShellHeader;

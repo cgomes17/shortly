@@ -7,11 +7,14 @@
   },
   "private": true,
   "dependencies": {
+    "@tanstack/react-router": "^1.91.3",
     "flowbite-react": "^0.10.2",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
     "@eslint/js": "^9.8.0",
     "@nx/devkit": "20.2.2",
     "@nx/eslint": "20.2.2",
@@ -28,6 +31,8 @@
     "@swc/cli": "~0.3.12",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
+    "@tanstack/router-devtools": "^1.92.3",
+    "@tanstack/router-plugin": "^1.91.1",
     "@testing-library/react": "15.0.6",
     "@types/jest": "^29.5.12",
     "@types/node": "18.16.9",

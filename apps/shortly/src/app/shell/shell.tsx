@@ -1,13 +1,13 @@
-import styled from 'tailwind';
+import ShellFooter from './footer/footer';
+import ShellHeader from './header/header';
 
-const StyledShell = styled.div`
-  color: pink;
-`;
-export function Shell() {
+export function Shell({ children }: { children: React.ReactNode }) {
   return (
-    <StyledShell>
-      <h1>Welcome to Shell!</h1>
-    </StyledShell>
+    <>
+      <ShellHeader />
+      {children}
+      <ShellFooter />
+    </>
   );
 }
 

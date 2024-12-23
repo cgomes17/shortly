@@ -59,11 +59,12 @@
         "bundler": "vite"
       },
       "component": {
-        "style": "tailwind"
+        "style": "none"
       },
       "library": {
         "style": "tailwind",
-        "linter": "eslint"
+        "linter": "eslint",
+        "unitTestRunner": "none"
       }
     }
   }

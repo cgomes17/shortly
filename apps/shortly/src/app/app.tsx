@@ -1,11 +1,17 @@
-import { Button } from 'flowbite-react';
-import NxWelcome from './nx-welcome';
+import { Outlet } from '@tanstack/react-router';
+import { RouterDevtools } from '@shortly/shared';
+import Shell from './shell/shell';
 
 export function App() {
   return (
     <div>
-      <Button>Test</Button>
-      <NxWelcome title="shortly" />
+      <Shell>
+        <>
+          Content
+          <Outlet />
+        </>
+      </Shell>
+      <RouterDevtools />
     </div>
   );
 }
