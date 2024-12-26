@@ -15,6 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@shortly/Pricing": ["libs/Pricing/src/index.ts"],
+      "@shortly/features": ["libs/features/src/index.ts"],
+      "@shortly/home": ["libs/home/src/index.ts"],
+      "@shortly/pricing": ["libs/pricing/src/index.ts"],
+      "@shortly/resources": ["libs/resources/src/index.ts"],
       "@shortly/shared": ["libs/shared/src/index.ts"]
     }
   },

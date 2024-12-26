@@ -4,23 +4,20 @@ import {
   createRouter,
 } from '@tanstack/react-router';
 import App from './app';
+import { getFeaturesRoute } from '@shortly/features';
+import { getResourcesRoute } from '@shortly/resources';
+import { getPricingRoute } from '@shortly/pricing';
+import { getHomeRoute } from '@shortly/home';
 
 export const rootRoute = createRootRoute({
   component: App,
 });
 
-const index = createRoute({
-  getParentRoute: () => rootRoute,
-  path: '/',
-  component: () => <div>Home</div>,
-});
-
-const features = createRoute({
-  getParentRoute: () => rootRoute,
-  path: '/features',
-  component: () => <div>Features</div>,
-});
-
-const routeTree = rootRoute.addChildren([index, features]);
+const routeTree = rootRoute.addChildren([
+  getHomeRoute(rootRoute),
+  getFeaturesRoute(rootRoute),
+  getResourcesRoute(rootRoute),
+  getPricingRoute(rootRoute),
+]);
 
 export const router = createRouter({ routeTree });
