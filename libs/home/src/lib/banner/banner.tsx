@@ -12,11 +12,7 @@ export function Banner() {
           Build your brand's recognition and get detailed insights on how your
           links are performing.
         </span>
-        <Button
-          pill
-          size="lg"
-          className="self-start mt-8 text-lg font-bold bg-primary"
-        >
+        <Button pill size="lg" className="self-start mt-8" color="info">
           Get Started
         </Button>
       </div>

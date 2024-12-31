@@ -7,7 +7,7 @@ export function BoostBanner() {
         <span className="text-3xl font-bold text-accent-contrast">
           Boost your links today
         </span>
-        <Button pill size="lg" className="text-lg font-bold bg-primary">
+        <Button pill size="lg" color="info">
           Get Started
         </Button>
       </div>
