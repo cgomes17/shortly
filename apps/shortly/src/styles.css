@@ -1,4 +1,29 @@
+:root {
+  --primary: hsl(180, 66%, 49%);
+  --primary-contrast: #ffffff;
+  --accent: hsl(257, 27%, 26%);
+  --accent-contrast: #ffffff;
+
+  --secondary: hsl(0, 100%, 74%);
+  --secondary-contrast: #ffffff;
+
+  --neutral-darkest: hsl(260, 8%, 14%);
+  --neutral-dark: hsl(255, 11%, 22%);
+  --neutral: hsl(257, 7%, 63%);
+  --neutral-light: hsl(225, 33%, 95%);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* You can add global styles to this file, and also import other style files */
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+svg.color-override path {
+  fill: inherit;
+}

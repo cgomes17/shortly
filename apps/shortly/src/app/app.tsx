@@ -4,15 +4,12 @@ import Shell from './shell/shell';
 
 export function App() {
   return (
-    <div>
+    <>
       <Shell>
-        <>
-          Content
-          <Outlet />
-        </>
+        <Outlet />
       </Shell>
       <RouterDevtools />
-    </div>
+    </>
   );
 }
 

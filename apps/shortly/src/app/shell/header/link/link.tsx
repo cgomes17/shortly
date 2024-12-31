@@ -1,17 +1,9 @@
-import { Link } from '@tanstack/react-router';
-
-export function ShellHeaderLink({
-  path,
-  label,
-}: {
-  path: string;
-  label: string;
-}) {
+export function ShellHeaderLinkText({ label }: { label: string }) {
   return (
-    <Link to={path} className="text-green-900 [&.active]:text-black">
+    <div className="text-sm font-bold text-neutral hover:text-neutral-dark">
       {label}
-    </Link>
+    </div>
   );
 }
 
-export default ShellHeaderLink;
+export default ShellHeaderLinkText;
