@@ -6,10 +6,10 @@ import Statistics from './statistics/statistics';
 export function Home() {
   return (
     <div className="flex flex-col w-full h-full justify-self-center">
-      <div className="flex flex-col flex-1 w-full mx-auto">
+      <div className="flex flex-col flex-1 w-full gap-32 mx-auto">
         <Banner />
         <div className="flex flex-col w-full pb-12 bg-neutral-light">
-          <div className="container flex flex-col gap-16 mx-auto">
+          <div className="container flex flex-col gap-16 mx-auto -mt-20">
             <Shortner />
             <Statistics />
           </div>
