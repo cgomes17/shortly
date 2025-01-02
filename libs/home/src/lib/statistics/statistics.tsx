@@ -43,8 +43,8 @@ export function Statistics() {
 
       <div className="flex flex-row items-center w-full md:flex-row">
         {statisticsCards.map((card, i) => (
-          <>
-            <div key={card.label} className={`flex-1 ${getTopPadding(i)} `}>
+          <div className="flex flex-row items-center" key={card.label}>
+            <div className={`flex-1 ${getTopPadding(i)} `}>
               <StatisticsCard card={card} />
             </div>
             {i < statisticsCards.length - 1 ? (
@@ -52,7 +52,7 @@ export function Statistics() {
             ) : (
               ''
             )}
-          </>
+          </div>
         ))}
       </div>
     </div>

@@ -5,9 +5,9 @@ export const customTheme: CustomFlowbiteTheme = {
     field: {
       input: {
         colors: {
-          gray: 'border-neutral-light bg-white text-gray-900 focus:border-accent focus:ring-neutral-dark',
+          gray: 'border-gray-300 bg-gray-50 text-neutral-dark focus:border-primary focus:ring-cyan-500 placeholder:text-neutral',
           failure:
-            'border-red-500 bg-white text-red-900 placeholder-red-700 focus:border-red-500 focus:ring-red-500',
+            'border-secondary bg-white text-secondary placeholder-secondary focus:border-secondary focus:ring-secondary',
         },
       },
     },

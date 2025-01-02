@@ -31,9 +31,6 @@ export function ShellHeader() {
             Sign Up
           </Button>
         </Link>
-        <Link to="/design">
-          <ShellHeaderLinkText label="Design" />
-        </Link>
       </div>
     </div>
   );

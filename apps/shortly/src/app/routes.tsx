@@ -8,7 +8,6 @@ import {
   createRouter,
 } from '@tanstack/react-router';
 import App from './app';
-import design from './../../../../design/desktop-active-states.jpg';
 
 export const rootRoute = createRootRoute({
   component: App,
@@ -16,13 +15,12 @@ export const rootRoute = createRootRoute({
 
 const routeTree = rootRoute.addChildren([
   createRoute({
-    path: '/design',
+    path: '/signup',
     getParentRoute: () => rootRoute,
-    component: () => (
-      <div>
-        <img src={design} alt="Design" />
-      </div>
-    ),
+  }),
+  createRoute({
+    path: '/login',
+    getParentRoute: () => rootRoute,
   }),
   getHomeRoute(rootRoute),
   getFeaturesRoute(rootRoute),
