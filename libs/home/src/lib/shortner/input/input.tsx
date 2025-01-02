@@ -1,6 +1,8 @@
 import { errorValidation, httpPattern } from '@shortly/shared';
+import { useMutation } from '@tanstack/react-query';
 import { Button, Label, TextInput } from 'flowbite-react';
 import { useForm } from 'react-hook-form';
+import { ShortnerService } from '../shortner.utils';
 
 interface ShortnerForm {
   fullLink: string;
@@ -13,8 +15,15 @@ export function ShortnerInput() {
     formState: { errors },
   } = useForm<ShortnerForm>({});
 
+  const mutation = useMutation({
+    mutationFn: ShortnerService.shortenLink,
+    onSuccess: (data) => {
+      console.log(data);
+    },
+  });
+
   const onSubmit = (data: ShortnerForm) => {
-    console.log(`Form Submit: `, data);
+    mutation.mutate(data.fullLink);
   };
 
   return (

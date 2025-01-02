@@ -1,5 +1,5 @@
-import { Outlet } from '@tanstack/react-router';
 import { RouterDevtools } from '@shortly/shared';
+import { Outlet } from '@tanstack/react-router';
 import Shell from './shell/shell';
 
 export function App() {
